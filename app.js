@@ -12,7 +12,6 @@ function adicionarAmigo() {
     if (amigo.trim() !== '') {
         amigos.push(amigo);
         limparCampo();
-        exibirTextoNaTela('h2', `Amigo adicionado com sucesso: ${amigo}`);
         listaAmigos();
         console.log(amigos);
     } else {
@@ -43,9 +42,21 @@ function listaAmigos(){
     });
 }
 
-
+// função para sortear amigo secreto
+// Verifica se a lista está vazia, se estiver, ele avisa o usuário
+// Depois ele gera um número aleatório para os elementos no array
+// Então com o resultado ele seleciona o número sorteado do array 
+// E exibe na tela o amigo secreto
 function sortearAmigo(){
+    if (amigos.length === 0) {
+        document.getElementById('resultado').innerHTML = 'A lista de amigos está vazia';
+        return;
+    }
+    let sorteio = Math.floor(Math.random() * amigos.length);
+    let amigoSorteado = amigos[sorteio];
 
+    document.getElementById('resultado').innerHTML = `O amigo sorteado foi: ${amigoSorteado}`;
+    return amigoSorteado;
 }
 
 // Função para exibir os informações na tela
