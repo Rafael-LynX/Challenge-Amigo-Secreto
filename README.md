@@ -34,8 +34,6 @@ $ git clone https://github.com/Rafael-LynX/Challenge-Amigo-Secreto.git
 ```
 Utilizando no vscode abra o arquivo HTML com Live Server para abrir o site. E comece a testar o desafio amigo secreto.
 
-Se quiser acesse o site: https://rafael-lynx.github.io/Challenge-Amigo-Secreto/
-
 ## 🛠️ Technologies Used
 
 [![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://docs.oracle.com/javase/tutorial/index.html)
